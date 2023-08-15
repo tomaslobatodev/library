@@ -43,11 +43,6 @@ main {
     gap: 20px;
 }
 
-.bookCard h2 {
-    margin: 5px 0px;
-    border-bottom: 1px solid gainsboro;
-}
-
 .bookCard div {
     display: flex;
     align-items: center;
@@ -122,4 +117,25 @@ main {
     align-self: end;
     box-sizing: border-box;
     font-size: 18px;
+}
+
+.read-true {
+    color: green
+}
+
+.read-false {
+    color: red
+}
+
+.cardHead {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 5px 0px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.delete {
+    border: none;
+    background-color: transparent;
 }
