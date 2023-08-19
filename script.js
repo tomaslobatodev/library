@@ -6,14 +6,16 @@ const createBookBtn = document.querySelector('.createBook')
 
 let books = []
 
-function Book(title, author, pages, read) {
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.read = read
-    this.id = books.length + 1
-    this.info = function() {
-        return `This is ${this.title} by ${this.author}, it has ${this.pages} pages.`
+class Book {
+    constructor(title, author, pages, read) {
+        this.title = title
+        this.author = author
+        this.pages = pages
+        this.read = read
+        this.id = books.length + 1
+        this.info = function() {
+            return `This is ${this.title} by ${this.author}, it has ${this.pages} pages.`
+        }
     }
 }
 
